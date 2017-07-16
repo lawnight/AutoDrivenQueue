@@ -1,4 +1,4 @@
-1231231## AutoDrivenQueue master
+## AutoDrivenQueue
 这是一个生产者和消费者的模型。消费者可以自驱动的处理数据。不用自己关心线程的创建和使用。曾用在游戏服务器中，处理大量客服端发上来的协议。
 
 ## 功能（feature）
