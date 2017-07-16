@@ -17,11 +17,11 @@
 
 假如生产方法如下
 ```
- public void producer() {
-		String words = "hello world!";
-		CustomAction action = new CustomAction(words);
-		selfDrivenActionQueue.add(action);
-	}
+public void producer() {
+	String words = "hello world!";
+	CustomAction action = new CustomAction(words);
+	selfDrivenActionQueue.add(action);
+}
 ```
 生成不断调用producer方法，产生很多words，customAction就是我们定义的消费者应该怎么处理这些数据。
 将数据包装在customAction里面，丢给selfDrivenActionQueue。OK，it's done。底层会自动取出队列里面的数据执行。
